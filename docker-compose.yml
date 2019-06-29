@@ -1,7 +1,7 @@
 version: '3'
 services:
     server:
-        container_name: mtons-blog
+        container_name: armor-blog
         image: langhsu/mblog:latest
         environment:
             TZ: Asia/Shanghai
