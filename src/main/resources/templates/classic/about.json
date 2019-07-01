@@ -2,8 +2,8 @@
     "name": "classic",
     "slogan": "经典主题",
     "version": "1.0",
-    "author": "landy",
-    "website": "http://mtons.com",
+    "author": "wcm",
+    "website": "http://129.28.201.249:8080/",
     "previews": [
         "/theme/classic/dist/images/preview/1.png"
     ]

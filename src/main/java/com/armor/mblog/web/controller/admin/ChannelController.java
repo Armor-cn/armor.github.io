@@ -26,7 +26,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * @author langhsu
+ * @author wcm
  *
  */
 @Controller("adminChannelController")
@@ -49,6 +49,7 @@ public class ChannelController extends BaseController {
 		if (id != null) {
 			Channel view = channelService.getById(id);
 			model.put("view", view);
+
 		}
 		return "/admin/channel/view";
 	}

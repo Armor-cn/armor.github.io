@@ -17,7 +17,7 @@ import com.armor.mblog.modules.entity.*;
 import org.springframework.beans.BeanUtils;
 
 /**
- * @author langhsu
+ * @author wcm
  */
 public class BeanMapUtils {
     private static String[] USER_IGNORE = new String[]{"password", "extend", "roles"};

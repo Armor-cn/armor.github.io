@@ -1,0 +1,10 @@
+{
+    "name": "youthv11",
+    "slogan": "青春主题v1.1",
+    "version": "V1.1",
+    "author": "wcm",
+    "website": "http://129.28.201.249:8080/",
+    "previews": [
+        "./youthv11/dist/images/preview/1.png"
+    ]
+}

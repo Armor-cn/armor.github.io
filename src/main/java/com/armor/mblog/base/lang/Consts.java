@@ -5,7 +5,7 @@ package com.armor.mblog.base.lang;
 
 
 /**
- * @author langhsu
+ * @author wcm
  *
  */
 public interface Consts {
