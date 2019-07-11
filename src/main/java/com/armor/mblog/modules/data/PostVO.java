@@ -20,7 +20,7 @@ import java.io.Serializable;
 
 /**
  * @author langhsu
- * 
+ *
  */
 public class PostVO extends Post implements Serializable {
 	private static final long serialVersionUID = -1144627551517707139L;
@@ -30,10 +30,10 @@ public class PostVO extends Post implements Serializable {
 
 	private UserVO author;
 	private Channel channel;
-	
+
 	@JSONField(serialize = false)
 	private PostAttribute attribute;
-	
+
 	public String[] getTagsArray() {
 		if (StringUtils.isNotBlank(super.getTags())) {
 			return super.getTags().split(Consts.SEPARATOR);

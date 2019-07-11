@@ -19,7 +19,7 @@ import org.springframework.data.repository.query.Param;
 import java.util.Collection;
 
 /**
- * @author langhsu
+ * @author wcm
  */
 public interface UserRepository extends JpaRepository<User, Long>, JpaSpecificationExecutor<User> {
     User findByUsername(String username);

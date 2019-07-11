@@ -45,7 +45,7 @@
                                     <td>${row.email}</td>
                                     <td>
                                         <#list row.roles as role>
-                                ${role.name}
+                                         ${role.name}
                                 </#list>
                                     </td>
                                     <td>

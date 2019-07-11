@@ -30,7 +30,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * @author langhsu
+ * @author wcm
  *
  */
 @Controller("adminUserController")
@@ -51,6 +51,7 @@ public class UserController extends BaseController {
 		Page<UserVO> page = userService.paging(pageable, name);
 
 		List<UserVO> users = page.getContent();
+
 		List<Long> userIds = new ArrayList<>();
 
 		users.forEach(item -> {
@@ -64,6 +65,7 @@ public class UserController extends BaseController {
 
 		model.put("name", name);
 		model.put("page", page);
+		System.out.println(model);
 		return "/admin/user/list";
 	}
 

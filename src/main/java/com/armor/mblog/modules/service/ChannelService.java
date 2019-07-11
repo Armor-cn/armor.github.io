@@ -18,7 +18,7 @@ import java.util.Map;
 /**
  * 栏目管理
  * 
- * @author langhsu
+ * @author wcm
  *
  */
 public interface ChannelService {
