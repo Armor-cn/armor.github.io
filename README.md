@@ -33,10 +33,7 @@
  IDE得装lombok插件
 ```
 
-- 文档: [说明文档](https://langhsu.github.io/mblog/#/)
-- 官网: [官网地址](http://www.mtons.com)
-- QQ交流群：378433412
-    
+
 ### 版本(3.5)更新内容：
     1. 文件存储目录可配置, 见 site.location, 默认为 user.dir
     2. 支持在${site.location}/storage/templates 目录下扩展自己的主题(${site.location}具体位置见启动日志)
@@ -62,34 +59,4 @@
     14. 邮件服务后台可配
     15. 新增标签页
     16. 新增注册邮箱验证开关(需要手动删除之前的 mto_security_code 表)
-
-
- * Youth主题v2 （支持响应式）[更新中...](https://gitee.com/cuiweiboy/youth)
- * Praise主题v1  （支持响应式）[更新中...](https://gitee.com/cuiweiboy/praise)
- * Delicate主题v1 （支持响应式）[更新中...](https://gitee.com/cuiweiboy/delicate)
- * Concise主题v2 （支持响应式）[更新中...](https://gitee.com/cuiweiboy/concise)
-       
-### 图片演示 
-
-## Praise主题
-
- ![输入图片说明](https://images.gitee.com/uploads/images/2019/0414/175116_449ed877_1758849.jpeg "1.jpg")
- ![输入图片说明](https://images.gitee.com/uploads/images/2019/0414/175353_6185e4f1_1758849.jpeg "2.jpg")
-
-## 后台管理
- ![输入图片说明](https://images.gitee.com/uploads/images/2019/0414/175438_f3bf5604_1758849.jpeg "3.jpg")
-
-## 响应式
- ![输入图片说明](https://images.gitee.com/uploads/images/2019/0414/175505_86e7a9d0_1758849.jpeg "4.jpg")
- ![输入图片说明](https://images.gitee.com/uploads/images/2019/0414/175555_7c74ef37_1758849.jpeg "5.jpg")
-
-## 默认主题
-
- ![输入图片说明](https://images.gitee.com/uploads/images/2019/0414/175618_4cc45d39_1758849.jpeg "6.jpg")
-
-## 经典主题
- ![输入图片说明](https://images.gitee.com/uploads/images/2019/0414/175658_78ebdc6e_1758849.jpeg "7.jpg")
-
-## Delicate主题
- ![输入图片说明](https://images.gitee.com/uploads/images/2019/0414/175717_46fc1496_1758849.jpeg "8.jpg")
 
