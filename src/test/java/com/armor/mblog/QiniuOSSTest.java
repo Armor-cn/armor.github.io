@@ -13,20 +13,20 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * created by langhsu
+ * created by wcm
  * on 2019/1/22
  */
 public class QiniuOSSTest {
-    private static final String accessKey = "";
-    private static final String secretKey = "";
-    private static final String domain = "qiniu.mtons.com";
-    private static final String bucket = "mtons";
+    private static final String accessKey = "SzwCIdeU8xbBGnKGg03_vaRPpMzemz5leklyGoPY";
+    private static final String secretKey = "ycgBuc2GNxlBKoZCdxF6-7Oj7ZS3CNcYrGzSJrJu";
+    private static final String domain = "http://ptztir4d2.bkt.clouddn.com";
+    private static final String bucket = "armor";
 
     public static void main(String[] args) throws IOException, InterruptedException {
-        File file = new File("F:/data/a_2.jpg");
+        File file = new File("E://data/14.jpg");
         byte[] bytes = ImageUtils.screenshot(file, 360, 200);
         final String key = "/static" + UpYunUtils.md5(bytes) + ".jpg";
-
+        System.out.println("key: " + key);
         Zone z = Zone.autoZone();
         Configuration configuration = new Configuration(z);
 

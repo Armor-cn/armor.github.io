@@ -7,13 +7,13 @@ import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
 
 /**
- * @author : xulang
+ * @author : wcm
  * @version : 1.0
  * @date : 2019/1/16
  */
 public class Base64Test {
     public static void main(String[] args) throws UnsupportedEncodingException {
-        byte[] keys = "mtons".getBytes("UTF-8");
+        byte[] keys = "armor".getBytes("UTF-8");
         System.out.println(Base64Utils.encodeToString(Arrays.copyOf(keys, 16)));
 
         String src = "/static/";

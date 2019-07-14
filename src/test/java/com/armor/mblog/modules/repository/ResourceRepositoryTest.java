@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * pic repo test
  *
- * @author saxing 2019/4/5 17:25
+ * @author wcm 2019/4/5 17:25
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = BootApplication.class)
@@ -28,6 +28,9 @@ public class ResourceRepositoryTest {
 
         LocalDateTime now = LocalDateTime.now();
         String timeStr = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss").format(now);
+        /**
+         * 获取截止到当前时间内的所有图片内容
+         */
         List<Resource> beforeResources = resourceRepository.find0Before(timeStr);
         System.out.println(beforeResources);
     }
