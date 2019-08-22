@@ -1,20 +1,8 @@
-/*
-+--------------------------------------------------------------------------
-|   Mblog [#RELEASE_VERSION#]
-|   ========================================
-|   Copyright (c) 2014, 2015 mtons. All Rights Reserved
-|   http://www.mtons.com
-|
-+---------------------------------------------------------------------------
-*/
 package com.armor.mblog.modules.data;
-
 import com.alibaba.fastjson.annotation.JSONField;
 import com.armor.mblog.modules.entity.Comment;
-
 import java.io.Serializable;
 import java.util.Date;
-
 /**
  * @author wcm
  */

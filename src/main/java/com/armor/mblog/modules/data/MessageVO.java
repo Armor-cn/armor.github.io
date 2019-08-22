@@ -3,7 +3,7 @@ package com.armor.mblog.modules.data;
 import com.armor.mblog.modules.entity.Message;
 
 /**
- * @author langhsu on 2015/8/31.
+ * @author wcm
  */
 public class MessageVO extends Message {
     // extend

@@ -1,22 +1,13 @@
-/*
-+--------------------------------------------------------------------------
-|   mtons [#RELEASE_VERSION#]
-|   ========================================
-|   Copyright (c) 2014, 2015 mtons. All Rights Reserved
-|   http://www.mtons.com
-|
-+---------------------------------------------------------------------------
-*/
+
 package com.armor.mblog.base.utils;
-
 import org.apache.commons.lang3.StringUtils;
-
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 /**
- * MD5摘要
+ * @author  wcm
+ * Message: MD5摘要
  */
 public class MD5 {
 

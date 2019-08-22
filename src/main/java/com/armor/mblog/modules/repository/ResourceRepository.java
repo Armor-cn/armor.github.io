@@ -11,9 +11,7 @@ import java.util.Collection;
 import java.util.List;
 
 /**
- * Resource dao
- *
- * @author wcm 2019/4/5 7:43
+ * @author wcm
  */
 public interface ResourceRepository extends JpaRepository<Resource, Long>, JpaSpecificationExecutor<Resource> {
 

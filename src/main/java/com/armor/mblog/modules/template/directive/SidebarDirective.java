@@ -9,8 +9,6 @@ import org.springframework.stereotype.Component;
 
 /**
  * method: [latest_posts, hottest_posts, latest_comments]
- * created by langhsu
- * on 2019/3/12
  */
 @Component
 public class SidebarDirective extends TemplateDirective {

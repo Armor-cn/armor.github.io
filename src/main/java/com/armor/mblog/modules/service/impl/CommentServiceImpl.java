@@ -1,12 +1,4 @@
-/*
-+--------------------------------------------------------------------------
-|   Mblog [#RELEASE_VERSION#]
-|   ========================================
-|   Copyright (c) 2014, 2015 mtons. All Rights Reserved
-|   http://www.mtons.com
-|
-+---------------------------------------------------------------------------
-*/
+
 package com.armor.mblog.modules.service.impl;
 
 import com.armor.mblog.modules.repository.CommentRepository;
@@ -28,10 +20,6 @@ import org.springframework.util.Assert;
 
 import java.util.*;
 
-/**
- * @author wcm
- *
- */
 @Service
 @Transactional(readOnly = true)
 public class CommentServiceImpl implements CommentService {

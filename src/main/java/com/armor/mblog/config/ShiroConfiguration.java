@@ -19,10 +19,8 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
- * shiro权限管理的配置
- *
  * @author langhsu
- * @since 3.0
+ * Message: shiro权限管理的配置
  */
 @Configuration
 @ConditionalOnProperty(name = "shiro.web.enabled", matchIfMissing = true)

@@ -4,11 +4,7 @@ import com.armor.mblog.modules.data.PostVO;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
-/**
- * @author : langhsu
- * @version : 1.0
- * @date : 2019/1/18
- */
+
 public interface PostSearchService {
     /**
      * 根据关键字搜索

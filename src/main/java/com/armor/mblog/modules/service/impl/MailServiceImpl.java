@@ -1,6 +1,6 @@
 package com.armor.mblog.modules.service.impl;
 
-import com.armor.mblog.base.lang.MtonsException;
+import com.armor.mblog.base.lang.ArmorException;
 import com.armor.mblog.config.SiteOptions;
 import com.armor.mblog.modules.service.MailService;
 import freemarker.template.Template;
@@ -17,9 +17,7 @@ import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
 import java.util.Map;
 import java.util.Properties;
 
-/**
- * @author : langhsu
- */
+
 @Slf4j
 @Service
 public class MailServiceImpl implements MailService {
@@ -70,7 +68,7 @@ public class MailServiceImpl implements MailService {
             t.setOutputEncoding("UTF-8");
             return FreeMarkerTemplateUtils.processTemplateIntoString(t, model);
         } catch (Exception e) {
-            throw new MtonsException(e.getMessage(), e);
+            throw new ArmorException(e.getMessage(), e);
         }
     }
 }

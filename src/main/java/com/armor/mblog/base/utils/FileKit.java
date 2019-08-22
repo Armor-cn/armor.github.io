@@ -1,7 +1,5 @@
 package com.armor.mblog.base.utils;
-
 import org.apache.commons.io.FileUtils;
-
 import javax.validation.constraints.NotNull;
 import java.io.File;
 import java.io.IOException;
@@ -10,8 +8,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
- * @author - langhsu
- * @create - 2018/3/9
+ * @author wcm
  */
 public class FileKit {
     // 文件允许格式

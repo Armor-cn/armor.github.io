@@ -5,53 +5,53 @@ package com.armor.mblog.base.lang;
  * @author wcm
  *
  */
-public class MtonsException extends RuntimeException {
+public class ArmorException extends RuntimeException {
 	private static final long serialVersionUID = -7443213283905815106L;
 	private int code;
 
-	public MtonsException() {
+	public ArmorException() {
 	}
 	
 	/**
-	 * MtonsException
+	 *
 	 * @param code 错误代码
 	 */
-	public MtonsException(int code) {
+	public ArmorException(int code) {
 		super("code=" + code);
 		this.code = code;
 	}
 
 	/**
-	 * MtonsException
+	 *
 	 * @param message 错误消息
 	 */
-	public MtonsException(String message) {
+	public ArmorException(String message) {
 		super(message);
 	}
 
 	/**
-	 * MtonsException
+	 *
 	 * @param cause 捕获的异常
 	 */
-	public MtonsException(Throwable cause) {
+	public ArmorException(Throwable cause) {
 		super(cause);
 	}
 
 	/**
-	 * MtonsException
+	 *
 	 * @param message 错误消息
 	 * @param cause 捕获的异常
 	 */
-	public MtonsException(String message, Throwable cause) {
+	public ArmorException(String message, Throwable cause) {
 		super(message, cause);
 	}
 	
 	/**
-	 * MtonsException
+	 *
 	 * @param code 错误代码
 	 * @param message 错误消息
 	 */
-	public MtonsException(int code, String message) {
+	public ArmorException(int code, String message) {
 		super(message);
 		this.code = code;
 	}

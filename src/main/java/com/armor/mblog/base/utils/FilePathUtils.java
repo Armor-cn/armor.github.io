@@ -1,12 +1,8 @@
-/**
- * 
- */
 package com.armor.mblog.base.utils;
-
 import org.apache.commons.text.RandomStringGenerator;
 
 /**
- * @author langhsu
+ * @author wcm
  *
  */
 public class FilePathUtils {

@@ -1,22 +1,17 @@
 package com.armor.mblog.base.utils;
-
 import lombok.extern.slf4j.Slf4j;
 import net.coobird.thumbnailator.Thumbnails;
 import net.coobird.thumbnailator.geometry.Coordinate;
 import net.coobird.thumbnailator.geometry.Position;
 import net.coobird.thumbnailator.geometry.Positions;
-import net.sf.ehcache.hibernate.regions.EhcacheCollectionRegion;
 import org.springframework.web.multipart.MultipartFile;
-
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.*;
 import java.net.URL;
-import java.net.URLConnection;
 
 /**
- * @author wcm on 2019/1/20.
- * @since 3.0
+ * @author wcm
  */
 @Slf4j
 public class ImageUtils {

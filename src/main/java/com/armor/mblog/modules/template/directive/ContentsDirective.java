@@ -23,12 +23,6 @@ import java.util.Set;
 
 /**
  * 文章内容查询
- * <p>
- * 示例：
- * 请求：http://mtons.com/index?order=newest&pn=2
- * 使用：@contents group=x pn=pn order=order
- *
- * @author langhsu
  */
 @Component
 public class ContentsDirective extends TemplateDirective {

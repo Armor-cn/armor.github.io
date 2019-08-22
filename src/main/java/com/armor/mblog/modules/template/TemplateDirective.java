@@ -12,9 +12,7 @@ import org.springframework.data.domain.Sort;
 import java.io.IOException;
 import java.util.Map;
 
-/**
- * @author langhsu
- */
+
 public abstract class TemplateDirective implements TemplateDirectiveModel {
     protected static String RESULT = "result";
     protected static String RESULTS = "results";

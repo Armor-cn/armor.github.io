@@ -1,12 +1,4 @@
-/*
-+--------------------------------------------------------------------------
-|   Mblog [#RELEASE_VERSION#]
-|   ========================================
-|   Copyright (c) 2014, 2015 mtons. All Rights Reserved
-|   http://www.mtons.com
-|
-+---------------------------------------------------------------------------
-*/
+
 package com.armor.mblog.modules.service.impl;
 
 import com.armor.mblog.modules.repository.UserOauthRepository;
@@ -27,7 +19,6 @@ import java.util.Optional;
 
 /**
  * 第三方登录授权管理
- * @author langhsu on 2015/8/12.
  */
 @Service
 @Transactional

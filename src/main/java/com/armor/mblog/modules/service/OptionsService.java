@@ -1,12 +1,4 @@
-/*
-+--------------------------------------------------------------------------
-|   Mblog [#RELEASE_VERSION#]
-|   ========================================
-|   Copyright (c) 2014, 2015 mtons. All Rights Reserved
-|   http://www.mtons.com
-|
-+---------------------------------------------------------------------------
-*/
+
 package com.armor.mblog.modules.service;
 
 import com.armor.mblog.modules.entity.Options;
@@ -15,11 +7,6 @@ import org.springframework.core.io.Resource;
 import java.util.List;
 import java.util.Map;
 
-
-/**
- * @author langhsu
- *
- */
 public interface OptionsService {
 	/**
 	 * 查询所有配置

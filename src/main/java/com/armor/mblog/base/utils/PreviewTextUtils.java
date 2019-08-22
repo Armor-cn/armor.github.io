@@ -1,25 +1,14 @@
-/*
-+--------------------------------------------------------------------------
-|   Mtons [#RELEASE_VERSION#]
-|   ========================================
-|   Copyright (c) 2014, 2015 mtons. All Rights Reserved
-|   http://www.mtons.com
-+---------------------------------------------------------------------------
-*/
 package com.armor.mblog.base.utils;
-
 import org.apache.commons.lang3.StringUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.safety.Whitelist;
 import org.jsoup.select.Elements;
-
 import java.util.ArrayList;
 import java.util.List;
-
 /**
- * Created by langhsu
+ * @author  wcm
  */
 public class PreviewTextUtils {
     /**

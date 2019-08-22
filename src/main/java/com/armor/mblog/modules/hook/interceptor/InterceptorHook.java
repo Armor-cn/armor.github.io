@@ -6,11 +6,7 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * 拦截器类钩子
- *
- * @author Beldon 2015/10/30
- */
+
 public interface InterceptorHook {
 
     /**

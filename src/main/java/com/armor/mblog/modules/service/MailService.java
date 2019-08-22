@@ -3,7 +3,7 @@ package com.armor.mblog.modules.service;
 import java.util.Map;
 
 /**
- * @author : langhsu
+ * @author  wcm
  */
 public interface MailService {
     void config();

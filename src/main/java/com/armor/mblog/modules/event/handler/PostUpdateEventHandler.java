@@ -2,14 +2,13 @@ package com.armor.mblog.modules.event.handler;
 
 import com.armor.mblog.modules.service.*;
 import com.armor.mblog.modules.event.PostUpdateEvent;
-import com.armor.mblog.modules.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 
 /**
- * @author langhsu
+ * @author wcm
  */
 @Component
 public class PostUpdateEventHandler implements ApplicationListener<PostUpdateEvent> {

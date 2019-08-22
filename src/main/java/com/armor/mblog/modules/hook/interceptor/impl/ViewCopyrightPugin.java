@@ -1,18 +1,12 @@
 package com.armor.mblog.modules.hook.interceptor.impl;
-
 import com.armor.mblog.modules.data.PostVO;
 import com.armor.mblog.modules.hook.interceptor.InterceptorHookSupport;
 import com.armor.mblog.web.controller.site.ChannelController;
 import org.springframework.stereotype.Component;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.ModelAndView;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-/**
- * @author Beldon 2015/10/31
- */
 @Component
 public class ViewCopyrightPugin extends InterceptorHookSupport {
 
@@ -33,8 +27,8 @@ public class ViewCopyrightPugin extends InterceptorHookSupport {
         Object editing = modelAndView.getModel().get("editing");
         if (null == editing && ret != null) {
             String content = ret.getContent();
-            if (!content.contains("本文归作者所有，未经作者允许，不得转载")) {
-                content += "<br/><p class=\"copyright\">注意：本文归作者所有，未经作者允许，不得转载</p>";
+            if (!content.contains("本文归作者所有，欢迎大家转载，请注明出处!")) {
+                content += "<br/><p class=\"copyright\">注意：本文归作者所有，欢迎大家转载，请注明出处!</p>";
                 ret.setContent(content);
             }
         }

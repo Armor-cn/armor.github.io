@@ -1,20 +1,9 @@
-/*
-+--------------------------------------------------------------------------
-|   Mblog [#RELEASE_VERSION#]
-|   ========================================
-|   Copyright (c) 2014, 2015 mtons. All Rights Reserved
-|   http://www.mtons.com
-|
-+---------------------------------------------------------------------------
-*/
 package com.armor.mblog.modules.entity;
-
 import javax.persistence.*;
 import java.util.Date;
-
 /**
- * 验证码
- * @author langhsu on 2015/8/14.
+ * @author wcm
+ * Message:验证码
  */
 @Entity
 @Table(name = "mto_security_code")

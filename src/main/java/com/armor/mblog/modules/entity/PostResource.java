@@ -1,14 +1,12 @@
 package com.armor.mblog.modules.entity;
-
 import lombok.Data;
-
 import javax.persistence.*;
 import java.io.Serializable;
 
 /**
  * 文章图片
  *
- * @author saxing 2019/4/3 22:39
+ * @author wcm
  */
 @Data
 @Entity

@@ -1,12 +1,4 @@
-/*
-+--------------------------------------------------------------------------
-|   Mblog [#RELEASE_VERSION#]
-|   ========================================
-|   Copyright (c) 2014, 2015 mtons. All Rights Reserved
-|   http://www.mtons.com
-|
-+---------------------------------------------------------------------------
-*/
+
 package com.armor.mblog.modules.service.impl;
 
 import com.armor.mblog.modules.repository.UserRepository;
@@ -21,7 +13,7 @@ import java.util.Set;
 
 /**
  * 用户事件操作, 用于统计用户信息
- * @author langhsu
+ * @author wcm
  */
 @Service
 @Transactional

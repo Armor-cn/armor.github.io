@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.*;
 
 /**
- * @author Beldon 2015/10/30
+ * @author wcm
  */
 @Component
 public class InterceptorHookManager {

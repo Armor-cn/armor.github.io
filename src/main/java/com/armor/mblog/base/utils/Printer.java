@@ -3,14 +3,11 @@ package com.armor.mblog.base.utils;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * @author langhsu on 2015/9/6.
+ * @author  wcm
  */
 @Slf4j
 public class Printer {
-    public static void info(String message) {
-        log.info(message);
-    }
-
+    public static void info(String message) { log.info(message); }
     public static void debug(String message) {
         log.debug(message);
     }

@@ -7,9 +7,7 @@ import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
 
 /**
- * @author : wcm
- * @version : 1.0
- * @date : 2019/1/16
+ * Base
  */
 public class Base64Test {
     public static void main(String[] args) throws UnsupportedEncodingException {

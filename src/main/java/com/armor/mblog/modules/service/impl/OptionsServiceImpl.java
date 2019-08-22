@@ -1,12 +1,4 @@
-/*
-+--------------------------------------------------------------------------
-|   Mblog [#RELEASE_VERSION#]
-|   ========================================
-|   Copyright (c) 2014, 2015 mtons. All Rights Reserved
-|   http://www.mtons.com
-|
-+---------------------------------------------------------------------------
-*/
+
 package com.armor.mblog.modules.service.impl;
 
 import com.armor.mblog.modules.repository.OptionsRepository;
@@ -27,7 +19,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author langhsu
+ * @author
  */
 @Service
 public class OptionsServiceImpl implements OptionsService {

@@ -10,7 +10,7 @@
 package com.armor.mblog.web.exceptions;
 
 import com.alibaba.fastjson.JSON;
-import com.armor.mblog.base.lang.MtonsException;
+import com.armor.mblog.base.lang.ArmorException;
 import com.armor.mblog.base.lang.Result;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.annotation.AnnotationUtils;
@@ -40,7 +40,7 @@ public class DefaultExceptionHandler implements HandlerExceptionResolver {
 	public ModelAndView resolveException(HttpServletRequest request,
 			HttpServletResponse response, Object handler, Exception ex) {
 
-		if (ex instanceof IllegalArgumentException || ex instanceof IllegalStateException || ex instanceof MtonsException) {
+		if (ex instanceof IllegalArgumentException || ex instanceof IllegalStateException || ex instanceof ArmorException) {
 			log.error(ex.getMessage());
 		} else {
 			log.error(ex.getMessage(), ex);

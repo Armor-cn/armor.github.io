@@ -1,20 +1,10 @@
-/*
-+--------------------------------------------------------------------------
-|   Mblog [#RELEASE_VERSION#]
-|   ========================================
-|   Copyright (c) 2014, 2015 mtons. All Rights Reserved
-|   http://www.mtons.com
-|
-+---------------------------------------------------------------------------
-*/
 package com.armor.mblog.modules.entity;
-
 import javax.persistence.*;
 import java.io.Serializable;
 
 /**
  * 模块/内容分组
- * @author langhsu
+ * @author wcm
  *
  */
 @Entity

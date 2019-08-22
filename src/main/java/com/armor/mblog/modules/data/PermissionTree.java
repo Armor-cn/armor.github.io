@@ -1,12 +1,10 @@
 package com.armor.mblog.modules.data;
-
 import com.armor.mblog.modules.entity.Permission;
-
 import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @author - langhsu on 2018/2/11
+ * @author wcm
  */
 public class PermissionTree extends Permission {
     private List<PermissionTree> items;

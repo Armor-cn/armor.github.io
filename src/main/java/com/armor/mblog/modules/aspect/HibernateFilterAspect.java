@@ -11,7 +11,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 /**
- * @author Mark Han
+ * @author wcm
  */
 @Aspect
 @Component

@@ -1,6 +1,3 @@
-/**
- *
- */
 package com.armor.mblog.modules.template.directive;
 
 import com.armor.mblog.modules.data.MessageVO;
@@ -15,8 +12,6 @@ import org.springframework.stereotype.Component;
 /**
  * 查询用户消息列表
  *
- * @author landy
- * @since 3.0
  */
 @Component
 public class UserMessagesDirective extends TemplateDirective {

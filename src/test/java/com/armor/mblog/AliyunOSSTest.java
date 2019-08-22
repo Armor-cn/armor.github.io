@@ -10,20 +10,19 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * created by wcm
- * on 2019/1/22
- * 测试文件图片上传到阿里云api
+ * 阿里云
  */
 public class AliyunOSSTest {
     public static void main(String[] args) throws IOException, InterruptedException {
-        // Endpoint以杭州为例，其它Region请按实际情况填写。
         String endpoint = "oss-cn-beijing.aliyuncs.com";
-        // 阿里云主账号AccessKey拥有所有API的访问权限，风险很高。强烈建议您创建并使用RAM账号进行API访问或日常运维，请登录 https://ram.console.aliyun.com 创建RAM账号。
+        // 阿里云主账号AccessKey拥有所有API的访问权限，
+        // 风险很高。强烈建议您创建并使用RAM账号进行API访问或日常运维，
+        // 请登录 https://ram.console.aliyun.com 创建RAM账号。
         String accessKeyId = "";
         String accessKeySecret = "";
         String bucketName = "Armor";
 
-        File file = new File("F:/data/a_2.jpg");
+        File file = new File("http://armor.ac.cn/storage/avatars/000/000/001_240.jpg");
         byte[] bytes = ImageUtils.screenshot(file, 360, 200);
         String key = UpYunUtils.md5(bytes);
 

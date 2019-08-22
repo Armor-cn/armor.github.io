@@ -1,12 +1,10 @@
 package com.armor.mblog.base.utils;
-
 import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * resource lock
  *
- * @author saxing 2019/4/3 16:20
+ * @author wcm
  */
 public class ResourceLock {
 

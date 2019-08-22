@@ -3,8 +3,9 @@ package com.armor.mblog.modules.entity;
 import javax.persistence.*;
 
 /**
- * 文章标签映射表
+ *
  * @author : langhsu
+ * Message: 文章标签映射表
  */
 @Entity
 @Table(name = "mto_post_tag", indexes = {

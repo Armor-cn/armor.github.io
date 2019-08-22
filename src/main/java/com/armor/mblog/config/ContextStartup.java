@@ -1,5 +1,4 @@
 package com.armor.mblog.config;
-
 import com.armor.mblog.modules.entity.Options;
 import com.armor.mblog.modules.service.ChannelService;
 import com.armor.mblog.modules.service.MailService;
@@ -22,8 +21,8 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 加载配置信息到系统
- * @since 3.0
+ * @author  wcm
+ * @Message: 加载配置信息到系统
  */
 @Slf4j
 @Order(2)

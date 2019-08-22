@@ -1,12 +1,4 @@
-/*
-+--------------------------------------------------------------------------
-|   Mblog [#RELEASE_VERSION#]
-|   ========================================
-|   Copyright (c) 2014, 2015 mtons. All Rights Reserved
-|   http://www.mtons.com
-|
-+---------------------------------------------------------------------------
-*/
+
 package com.armor.mblog.modules.service;
 
 import com.armor.mblog.base.lang.Consts;
@@ -15,7 +7,7 @@ import org.springframework.cache.annotation.CacheEvict;
 import java.util.Set;
 
 /**
- * @author langhsu on 2015/8/6.
+ * @author wcm
  */
 public interface UserEventService {
     /**
