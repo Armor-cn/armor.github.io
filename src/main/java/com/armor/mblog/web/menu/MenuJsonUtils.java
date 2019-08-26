@@ -11,9 +11,6 @@ import java.util.List;
 
 /**
  * 加载后台Menu菜单
- *
- * @author - langhsu
- * @create - 2018/5/18
  */
 public class MenuJsonUtils {
     private static String config = "/scripts/menu.json";
