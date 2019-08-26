@@ -7,7 +7,7 @@ spring:
         url: jdbc:mysql://armor.ac.cn/db_mblog?useSSL=false&characterEncoding=utf8&serverTimezone=GMT%2B8
        # url: jdbc:mysql://localhost/db_mblog?useSSL=false&characterEncoding=utf8&serverTimezone=GMT%2B8
         username: root
-        password: root
+        password: Armor@wcm520.com
 
     flyway:
         enabled: true

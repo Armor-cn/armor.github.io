@@ -11,7 +11,7 @@
 }
 
 .md-editor.fullscreen {
-    z-index: 9999;
+    z-index: 9999;.markdown-body pre
     border: 0;
     height: 100%;
     left: 0;
@@ -729,7 +729,7 @@
     overflow: auto;
     font-size: 85%;
     line-height: 1.45;
-    background-color: #f7f7f7;
+    background-color: #0a0808;
     border-radius: 3px;
 }
 
@@ -743,6 +743,7 @@
     word-wrap: normal;
     background-color: transparent;
     border: 0;
+    color: #dcccccb8;
 }
 
 .markdown-body pre code::before,

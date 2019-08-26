@@ -1,12 +1,4 @@
-/*
-+--------------------------------------------------------------------------
-|   Mblog [#RELEASE_VERSION#]
-|   ========================================
-|   Copyright (c) 2014, 2015 mtons. All Rights Reserved
-|   http://www.mtons.com
-|
-+---------------------------------------------------------------------------
-*/
+
 package com.armor.mblog.web.controller;
 
 import com.armor.mblog.base.lang.Result;
@@ -39,9 +31,6 @@ import java.util.Date;
 
 /**
  * Controller 基类
- *
- * @author langhsu
- * @since 3.0
  */
 @Slf4j
 public class BaseController {
