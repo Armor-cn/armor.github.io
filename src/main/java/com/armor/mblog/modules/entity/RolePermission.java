@@ -5,7 +5,8 @@ import java.io.Serializable;
 
 /**
  * 角色-权限值
- * @author - langhsu on 2018/2/11
+ * @author - wcm
+ * 2018/2/11
  */
 @Entity
 @Table(name = "shiro_role_permission")

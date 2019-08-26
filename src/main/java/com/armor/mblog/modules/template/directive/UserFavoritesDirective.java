@@ -1,6 +1,3 @@
-/**
- *
- */
 package com.armor.mblog.modules.template.directive;
 
 import com.armor.mblog.modules.data.FavoriteVO;
@@ -14,9 +11,6 @@ import org.springframework.stereotype.Component;
 
 /**
  * 根据作者取收藏列表
- *
- * @author landy
- * @since 3.0
  */
 @Component
 public class UserFavoritesDirective extends TemplateDirective {

@@ -2,7 +2,7 @@ version: '3'
 services:
     server:
         container_name: armor-blog
-        image: langhsu/mblog:latest
+        image: wcm/mblog:latest
         environment:
             TZ: Asia/Shanghai
         ports:

@@ -1,0 +1,46 @@
+------------------------------------------------------
+ _____ ______   ________  ___       ________  ________
+|\   _ \  _   \|\   __  \|\  \     |\   __  \|\   ____\
+\ \  \\\__\ \  \ \  \|\ /\ \  \    \ \  \|\  \ \  \___|
+ \ \  \\|__| \  \ \   __  \ \  \    \ \  \\\  \ \  \  ___
+  \ \  \    \ \  \ \  \|\  \ \  \____\ \  \\\  \ \  \|\  \
+   \ \__\    \ \__\ \_______\ \_______\ \_______\ \_______\
+    \|__|     \|__|\|_______|\|_______|\|_______|\|_______|
+------------------------------------------------------------
+Spring Boot   :     2.1.2.RELEASE
+mblog         :     3.5.0
+mblog storage :     E:\blog
+------------------------------------------------------------
+2019-07-14 15:05:10.192  INFO 11840 --- [           main] com.armor.mblog.BootApplication          : Starting BootApplication vlatest on Administrator with PID 11840 (E:\blog\target\mblog-latest.jar started by admin in E:\blog)
+2019-07-14 15:05:10.198  INFO 11840 --- [           main] com.armor.mblog.BootApplication          : The following profiles are active: mysql
+2019-07-14 15:05:16.614  INFO 11840 --- [           main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-07-14 15:05:16.628  INFO 11840 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-14 15:05:21.734  INFO 11840 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-14 15:05:21.745  INFO 11840 --- [           main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:mysql://armor.ac.cn/db_mblog (MySQL 5.6)
+2019-07-14 15:05:22.788  INFO 11840 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 2 migrations (execution time 00:00.391s)
+2019-07-14 15:05:23.280  INFO 11840 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema `db_mblog`: 3.2
+2019-07-14 15:05:23.335  INFO 11840 --- [           main] o.f.core.internal.command.DbMigrate      : Schema `db_mblog` is up to date. No migration necessary.
+2019-07-14 15:05:32.102  WARN 11840 --- [           main] o.h.s.i.i.LuceneEmbeddedIndexFamilyImpl  : HSEARCH000075: Configuration setting hibernate.search.lucene_version was not specified: using LUCENE_CURRENT.
+2019-07-14 15:05:35.061  INFO 11840 --- [           main] o.a.shiro.cache.ehcache.EhCacheManager   : Cache with name 'com.armor.mblog.shiro.AccountRealm.authorizationCache' does not yet exist.  Creating now.
+2019-07-14 15:05:35.101  INFO 11840 --- [           main] o.a.shiro.cache.ehcache.EhCacheManager   : Added EhCache named [com.armor.mblog.shiro.AccountRealm.authorizationCache]
+2019-07-14 15:05:36.321  WARN 11840 --- [           main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2019-07-14 15:05:36.456  INFO 11840 --- [           main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2019-07-14 15:05:39.210  WARN 11840 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-07-14 15:05:40.314  INFO 11840 --- [           main] org.xnio                                 : XNIO version 3.3.8.Final
+2019-07-14 15:05:40.342  INFO 11840 --- [           main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2019-07-14 15:05:40.641 ERROR 11840 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
+2019-07-14 15:05:40.690  INFO 11840 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-07-14 15:05:40.715  INFO 11840 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

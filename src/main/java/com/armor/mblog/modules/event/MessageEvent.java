@@ -3,7 +3,7 @@ package com.armor.mblog.modules.event;
 import org.springframework.context.ApplicationEvent;
 
 /**
- * @author langhsu on 2015/8/31.
+ * @author wcm
  */
 public class MessageEvent extends ApplicationEvent {
 	private static final long serialVersionUID = -4261382494171476390L;

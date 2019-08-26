@@ -1,18 +1,10 @@
-/*
-+--------------------------------------------------------------------------
-|   Mblog [#RELEASE_VERSION#]
-|   ========================================
-|   Copyright (c) 2014, 2015 mtons. All Rights Reserved
-|   http://www.mtons.com
-|
-+---------------------------------------------------------------------------
-*/
+
 package com.armor.mblog.modules.service.impl;
 
 import com.armor.mblog.modules.repository.RoleRepository;
 import com.armor.mblog.modules.repository.UserRepository;
 import com.armor.mblog.base.lang.EntityStatus;
-import com.armor.mblog.base.lang.MtonsException;
+import com.armor.mblog.base.lang.ArmorException;
 import com.armor.mblog.base.utils.MD5;
 import com.armor.mblog.modules.data.AccountProfile;
 import com.armor.mblog.modules.data.BadgesCount;
@@ -171,13 +163,13 @@ public class UserServiceImpl implements UserService {
         User po = userRepository.findById(id).get();
 
         if (email.equals(po.getEmail())) {
-            throw new MtonsException("邮箱地址没做更改");
+            throw new ArmorException("邮箱地址没做更改");
         }
 
         User check = userRepository.findByEmail(email);
 
         if (check != null && check.getId() != po.getId()) {
-            throw new MtonsException("该邮箱地址已经被使用了");
+            throw new ArmorException("该邮箱地址已经被使用了");
         }
         po.setEmail(email);
         userRepository.save(po);

@@ -20,9 +20,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.*;
 
-/**
- * @author langhsu
- */
+
 @Service
 @Transactional(readOnly = true)
 public class MessageServiceImpl implements MessageService {

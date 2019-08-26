@@ -9,7 +9,7 @@
 */
 package com.armor.mblog.web.controller.site.user;
 
-import com.armor.mblog.base.lang.MtonsException;
+import com.armor.mblog.base.lang.ArmorException;
 import com.armor.mblog.modules.data.AccountProfile;
 import com.armor.mblog.modules.service.MessageService;
 import com.armor.mblog.modules.service.UserService;
@@ -68,7 +68,7 @@ public class UsersController extends BaseController {
             // 标记已读
             AccountProfile profile = getProfile();
             if (null == profile || profile.getId() != userId) {
-                throw new MtonsException("您没有权限访问该页面");
+                throw new ArmorException("您没有权限访问该页面");
             }
             messageService.readed4Me(profile.getId());
         }

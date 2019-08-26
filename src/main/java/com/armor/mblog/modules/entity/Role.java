@@ -5,8 +5,8 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * 角色
- * @author - langhsu on 2018/2/11
+ * @author wcm
+ * Message:  角色
  */
 @Entity
 @Table(name = "shiro_role")

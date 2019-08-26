@@ -3,7 +3,7 @@ package com.armor.mblog.modules.data;
 import com.armor.mblog.modules.entity.Favorite;
 
 /**
- * @author langhsu on 2015/8/31.
+ * @author wcm
  */
 public class FavoriteVO extends Favorite {
     // extend

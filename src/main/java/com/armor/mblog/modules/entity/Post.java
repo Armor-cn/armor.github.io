@@ -22,9 +22,8 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * 内容表
  * @author langhsu
- *
+ * Message:内容表
  */
 @Entity
 @Table(name = "mto_post", indexes = {

@@ -10,7 +10,7 @@ import org.springframework.data.repository.query.Param;
 import java.util.List;
 
 /**
- * @author langhsu on 2018/8/12.
+ * @author wcm
  */
 public interface PermissionRepository extends JpaRepository<Permission, Long>, JpaSpecificationExecutor<Permission> {
     List<Permission> findAllByParentId(int parentId, Sort sort);

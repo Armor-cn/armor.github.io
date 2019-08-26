@@ -9,9 +9,7 @@
 */
 package com.armor.mblog.modules.service;
 
-/**
- * @author langhsu on 2015/8/14.
- */
+
 public interface SecurityCodeService {
     /**
      * 生成验证码

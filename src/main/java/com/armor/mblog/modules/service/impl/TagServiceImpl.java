@@ -23,9 +23,6 @@ import org.springframework.util.Assert;
 import java.util.*;
 import java.util.stream.Collectors;
 
-/**
- * @author : langhsu
- */
 @Service
 @Transactional(readOnly = true)
 public class TagServiceImpl implements TagService {

@@ -1,15 +1,5 @@
-/*
-+--------------------------------------------------------------------------
-|   Mblog [#RELEASE_VERSION#]
-|   ========================================
-|   Copyright (c) 2014, 2015 mtons. All Rights Reserved
-|   http://www.mtons.com
-|
-+---------------------------------------------------------------------------
-*/
 package com.armor.mblog.base.utils;
-
-import com.armor.mblog.base.lang.MtonsException;
+import com.armor.mblog.base.lang.ArmorException;
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.HttpStatus;
 import org.apache.commons.httpclient.methods.PostMethod;
@@ -19,7 +9,7 @@ import java.io.IOException;
 import java.util.Map;
 
 /**
- * @author langhsu
+ * @author wcm
  */
 public class HttpUtils {
 
@@ -41,7 +31,7 @@ public class HttpUtils {
     	int status = client.executeMethod(post);
 
     	if (status != HttpStatus.SC_OK) {
-    		throw new MtonsException("该地址请求失败");
+    		throw new ArmorException("该地址请求失败");
     	}
     	return post.getResponseBodyAsString();
 	}

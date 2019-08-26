@@ -6,6 +6,7 @@ import java.util.List;
 
 /**
  * @author : wcm
+ * Message: 后台主题配置
  */
 @Data
 public class Theme {
@@ -43,4 +44,5 @@ public class Theme {
      * 预览图
      */
     private List<String> previews;
+
 }

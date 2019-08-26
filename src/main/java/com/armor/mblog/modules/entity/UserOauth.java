@@ -1,20 +1,10 @@
-/*
-+--------------------------------------------------------------------------
-|   Mblog [#RELEASE_VERSION#]
-|   ========================================
-|   Copyright (c) 2014, 2015 mtons. All Rights Reserved
-|   http://www.mtons.com
-|
-+---------------------------------------------------------------------------
-*/
 package com.armor.mblog.modules.entity;
 
 import javax.persistence.*;
 
 /**
- * 第三方开发授权登录
- *
- * @author langhsu on 2015/8/12.
+ * @author wcm
+ * Message: 第三方开发授权登录
  */
 @Entity
 @Table(name = "mto_user_oauth")

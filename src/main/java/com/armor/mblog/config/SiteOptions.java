@@ -1,27 +1,14 @@
-/*
-+--------------------------------------------------------------------------
-|   Mblog [#RELEASE_VERSION#]
-|   ========================================
-|   Copyright (c) 2014, 2019 mtons. All Rights Reserved
-|   http://www.mtons.com
-|
-+---------------------------------------------------------------------------
-*/
 package com.armor.mblog.config;
-
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
-
 import javax.validation.constraints.NotNull;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
  * @author : wcm
- * @version : 1.0
- * @date : 2019/06/23
+ * Message: 系统版本
  */
 @Configuration
 @ConfigurationProperties(prefix = "site")

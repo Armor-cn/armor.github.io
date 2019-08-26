@@ -7,9 +7,6 @@ import org.springframework.data.domain.Pageable;
 
 import java.util.List;
 
-/**
- * @author - langhsu on 2018/2/11
- */
 public interface PermissionService {
     /**
      * 分页查询权限

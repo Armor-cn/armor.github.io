@@ -1,12 +1,4 @@
-/*
-+--------------------------------------------------------------------------
-|   Mblog [#RELEASE_VERSION#]
-|   ========================================
-|   Copyright (c) 2014, 2015 mtons. All Rights Reserved
-|   http://www.mtons.com
-|
-+---------------------------------------------------------------------------
-*/
+
 package com.armor.mblog.modules.service.impl;
 
 import com.armor.mblog.base.utils.BeanMapUtils;
@@ -45,10 +37,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-/**
- * @author wcm
- *
- */
+
 @Service
 @Transactional
 public class PostServiceImpl implements PostService {

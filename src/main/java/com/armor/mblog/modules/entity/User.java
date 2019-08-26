@@ -5,10 +5,8 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * 用户信息
- *
  * @author wcm
- *
+ * Message:用户信息
  */
 @Entity
 @Table(name = "mto_user")

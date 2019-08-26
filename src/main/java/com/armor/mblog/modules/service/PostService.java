@@ -24,8 +24,6 @@ import java.util.Set;
 
 /**
  * 文章管理
- * @author wcm
- *
  */
 @CacheConfig(cacheNames = Consts.CACHE_USER)
 public interface PostService {

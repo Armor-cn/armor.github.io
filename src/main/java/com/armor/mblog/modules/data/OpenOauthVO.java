@@ -1,17 +1,8 @@
-/*
-+--------------------------------------------------------------------------
-|   Mblog [#RELEASE_VERSION#]
-|   ========================================
-|   Copyright (c) 2014, 2015 mtons. All Rights Reserved
-|   http://www.mtons.com
-|
-+---------------------------------------------------------------------------
-*/
 package com.armor.mblog.modules.data;
 
 /**
  * 第三方开发授权登录
- * @author langhsu
+ * @author wcm
  */
 public class OpenOauthVO {
     private long id;

@@ -26,9 +26,7 @@ import org.apache.shiro.subject.Subject;
 import org.apache.shiro.web.servlet.OncePerRequestFilter;
 import org.apache.shiro.web.util.WebUtils;
 
-/**
- * @version 1.0.0
- */
+
 public class AuthenticatedFilter extends OncePerRequestFilter {
     private static final String JS = "<script type='text/javascript'>var wp=window.parent; if(wp!=null){while(wp.parent&&wp.parent!==wp){wp=wp.parent;}wp.location.href='%1$s';}else{window.location.href='%1$s';}</script>";
     private String loginUrl = "/login";

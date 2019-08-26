@@ -7,8 +7,7 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import java.util.List;
 
 /**
- * @author - langhsu
- * @create - 2018/5/18
+ * @author  wcm
  */
 public interface RolePermissionRepository extends JpaRepository<RolePermission, Long>, JpaSpecificationExecutor<RolePermission> {
     int deleteByRoleId(long roleId);

@@ -1,5 +1,4 @@
 package com.armor.mblog.config;
-
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.alibaba.fastjson.support.config.FastJsonConfig;
@@ -21,8 +20,7 @@ import java.util.Map;
 import java.util.concurrent.ThreadPoolExecutor;
 
 /**
- * @author : langhsu
- * @since 3.0
+ * @author wcm
  */
 @Configuration
 @EnableAsync
@@ -47,7 +45,7 @@ public class SiteConfiguration {
         executor.setMaxPoolSize(8);
         executor.setQueueCapacity(100);
         executor.setKeepAliveSeconds(60);
-        executor.setThreadNamePrefix("mtons.mblog.logThread-");
+        executor.setThreadNamePrefix("armor.mblog.logThread-");
         executor.setRejectedExecutionHandler(new ThreadPoolExecutor.CallerRunsPolicy());
         executor.setWaitForTasksToCompleteOnShutdown(true);
         return executor;
@@ -69,9 +67,4 @@ public class SiteConfiguration {
         return fastConverter;
     }
 
-//    @Bean
-//    public HttpMessageConverters httpMessageConverters(){
-//        FastJsonHttpMessageConverter jsonHttpMessageConverter = fastJsonHttpMessageConverter();
-//        return new HttpMessageConverters(jsonHttpMessageConverter);
-//    }
 }

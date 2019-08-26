@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * 文章图片 dao
  *
- * @author saxing 2019/4/5 8:09
+ * @author wcm
  */
 public interface PostResourceRepository extends JpaRepository<PostResource, Long>, JpaSpecificationExecutor<PostResource> {
 

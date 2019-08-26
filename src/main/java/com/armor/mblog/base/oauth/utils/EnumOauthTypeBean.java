@@ -29,7 +29,6 @@ public enum EnumOauthTypeBean {
                 return status[i];
             }
         }
-
         throw new Exception();
     }
 }

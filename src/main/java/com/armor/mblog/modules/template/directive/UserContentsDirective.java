@@ -1,6 +1,4 @@
-/**
- *
- */
+
 package com.armor.mblog.modules.template.directive;
 
 import com.armor.mblog.modules.data.PostVO;
@@ -14,8 +12,6 @@ import org.springframework.stereotype.Component;
 
 /**
  * 根据作者取文章列表
- *
- * @author langhsu
  *
  */
 @Component

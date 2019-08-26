@@ -70,17 +70,17 @@ site:
         # 注册开关
         register: true
         # 注册开启邮箱验证
-        register_email_validate: false
+        register_email_validate: true
         # 发布文章开关
         post: true
         # 评论开关
         comment: true
     options:
         theme: default
-        site_logo: /dist/images/logo/logo1.png
+        site_logo: /dist/images/logo/logo.png
         site_favicon: /dist/images/logo/m.png
         storage_max_width: 800
         storage_limit_size: 2
         editor: markdown
-        thumbnail_channel_size: 200x112
+        thumbnail_channel_size: 1920x1080
         thumbnail_post_size: 360x200

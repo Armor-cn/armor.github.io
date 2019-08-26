@@ -1,18 +1,10 @@
-/*
-+--------------------------------------------------------------------------
-|   Mblog [#RELEASE_VERSION#]
-|   ========================================
-|   Copyright (c) 2014, 2015 mtons. All Rights Reserved
-|   http://www.mtons.com
-|
-+---------------------------------------------------------------------------
-*/
+
 package com.armor.mblog.modules.service.impl;
 
 import com.armor.mblog.modules.repository.SecurityCodeRepository;
 import com.armor.mblog.base.lang.Consts;
 import com.armor.mblog.base.lang.EntityStatus;
-import com.armor.mblog.base.lang.MtonsException;
+import com.armor.mblog.base.lang.ArmorException;
 import com.armor.mblog.modules.service.SecurityCodeService;
 import com.armor.mblog.modules.entity.SecurityCode;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -24,9 +16,6 @@ import org.springframework.util.Assert;
 
 import java.util.Date;
 
-/**
- * @author langhsu on 2015/8/14.
- */
 @Service
 public class SecurityCodeServiceImpl implements SecurityCodeService {
     @Autowired
@@ -56,7 +45,7 @@ public class SecurityCodeServiceImpl implements SecurityCodeService {
             long interval = ( now.getTime() - po.getCreated().getTime() ) / 1000;
 
             if (interval <= 60) {
-                throw new MtonsException("发送间隔时间不能少于1分钟");
+                throw new ArmorException("发送间隔时间不能少于1分钟");
             }
 
             // 把 验证位 置0

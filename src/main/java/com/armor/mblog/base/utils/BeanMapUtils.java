@@ -1,19 +1,7 @@
-/*
-+--------------------------------------------------------------------------
-|   Mblog [#RELEASE_VERSION#]
-|   ========================================
-|   Copyright (c) 2014, 2015 mtons. All Rights Reserved
-|   http://www.mtons.com
-|
-+---------------------------------------------------------------------------
-*/
 package com.armor.mblog.base.utils;
-
 import com.armor.mblog.modules.data.*;
 import com.armor.mblog.modules.entity.*;
 import com.armor.mblog.base.lang.Consts;
-import com.armor.mblog.modules.data.*;
-import com.armor.mblog.modules.entity.*;
 import org.springframework.beans.BeanUtils;
 
 /**

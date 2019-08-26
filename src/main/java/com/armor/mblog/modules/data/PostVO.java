@@ -1,14 +1,4 @@
-/*
-+--------------------------------------------------------------------------
-|   Mblog [#RELEASE_VERSION#]
-|   ========================================
-|   Copyright (c) 2014, 2015 mtons. All Rights Reserved
-|   http://www.mtons.com
-|
-+---------------------------------------------------------------------------
-*/
 package com.armor.mblog.modules.data;
-
 import com.alibaba.fastjson.annotation.JSONField;
 import com.armor.mblog.modules.entity.Channel;
 import com.armor.mblog.modules.entity.Post;
@@ -19,7 +9,7 @@ import org.apache.commons.lang3.StringUtils;
 import java.io.Serializable;
 
 /**
- * @author langhsu
+ * @author wcm
  *
  */
 public class PostVO extends Post implements Serializable {

@@ -1,13 +1,3 @@
-/*
-+--------------------------------------------------------------------------
-|   Mblog [#RELEASE_VERSION#]
-|   ========================================
-|   Copyright (c) 2014, 2015 mtons. All Rights Reserved
-|   http://www.mtons.com
-|
-+---------------------------------------------------------------------------
-*/
-
 define(function(require, exports, module) {
 	J = jQuery;
 	require('plugins');
@@ -49,6 +39,7 @@ define(function(require, exports, module) {
                 container: document.getElementById('face-btn'),
                 target: document.getElementById('chat_text'),
                 api: _MTONS.BASE_PATH + '/dist/vendors/owo/OwO.json',
+				// api:'https://api.weibo.com/2/emotions.json?source=1362404091',
                 position: 'down',
                 width: '600px',
                 maxHeight: '250px'

@@ -1,12 +1,10 @@
 package com.armor.mblog.modules.entity;
 
 import org.hibernate.annotations.Type;
-
 import javax.persistence.*;
 import java.io.Serializable;
-
 /**
- * Created by langhsu on 2015/10/25.
+ * @author wccm
  */
 @Entity
 @Table(name = "mto_post_attribute")

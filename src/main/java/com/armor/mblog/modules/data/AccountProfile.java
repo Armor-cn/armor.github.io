@@ -1,19 +1,10 @@
-/*
-+--------------------------------------------------------------------------
-|   Mblog [#RELEASE_VERSION#]
-|   ========================================
-|   Copyright (c) 2014, 2015 mtons. All Rights Reserved
-|   http://www.mtons.com
-|
-+---------------------------------------------------------------------------
-*/
 package com.armor.mblog.modules.data;
 
 import java.io.Serializable;
 import java.util.Date;
 
 /**
- * @author langhsu
+ * @author wcm
  *
  */
 public class AccountProfile implements Serializable {

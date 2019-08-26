@@ -1,7 +1,7 @@
 package com.armor.mblog.web.controller.site.auth;
 
 import com.armor.mblog.base.lang.Consts;
-import com.armor.mblog.base.lang.MtonsException;
+import com.armor.mblog.base.lang.ArmorException;
 import com.armor.mblog.base.lang.Result;
 import com.armor.mblog.base.oauth.*;
 import com.armor.mblog.base.oauth.utils.OpenOauthBean;
@@ -13,7 +13,6 @@ import com.armor.mblog.modules.data.OpenOauthVO;
 import com.armor.mblog.modules.data.UserVO;
 import com.armor.mblog.modules.service.OpenOauthService;
 import com.armor.mblog.modules.service.UserService;
-import com.armor.mblog.base.oauth.*;
 import com.armor.mblog.web.controller.BaseController;
 import com.armor.mblog.web.controller.site.Views;
 import lombok.extern.slf4j.Slf4j;
@@ -66,7 +65,7 @@ public class CallbackController extends BaseController {
             request.getSession().setAttribute(SESSION_STATE, state);
             response.sendRedirect(OauthSina.me().getAuthorizeUrl(state));
         } catch (Exception e) {
-            throw new MtonsException("跳转到微博授权接口时发生异常");
+            throw new ArmorException("跳转到微博授权接口时发生异常");
         }
     }
 
@@ -84,7 +83,7 @@ public class CallbackController extends BaseController {
         String session_state = (String) request.getSession().getAttribute(SESSION_STATE);
         // 取消了授权
         if (StringUtils.isBlank(state) || StringUtils.isBlank(session_state) || !state.equals(session_state) || StringUtils.isBlank(code)) {
-            throw new MtonsException("缺少必要的参数");
+            throw new ArmorException("缺少必要的参数");
         }
         request.getSession().removeAttribute(SESSION_STATE);
         // --
@@ -93,7 +92,7 @@ public class CallbackController extends BaseController {
         try {
             openOauthBean = OauthSina.me().getUserBeanByCode(code);
         } catch (Exception e) {
-            throw new MtonsException("解析信息时发生错误");
+            throw new ArmorException("解析信息时发生错误");
         }
 
         OpenOauthVO openOauth = new OpenOauthVO();
@@ -136,7 +135,7 @@ public class CallbackController extends BaseController {
             request.getSession().setAttribute(SESSION_STATE, state);
             response.sendRedirect(OauthQQ.me().getAuthorizeUrl(state));
         } catch (Exception e) {
-            throw new MtonsException("跳转到QQ授权接口时发生异常");
+            throw new ArmorException("跳转到QQ授权接口时发生异常");
         }
     }
 
@@ -153,7 +152,7 @@ public class CallbackController extends BaseController {
         String session_state = (String) request.getSession().getAttribute(SESSION_STATE);
         // 取消了授权
         if (StringUtils.isBlank(state) || StringUtils.isBlank(session_state) || !state.equals(session_state) || StringUtils.isBlank(code)) {
-            throw new MtonsException("缺少必要的参数");
+            throw new ArmorException("缺少必要的参数");
         }
         request.getSession().removeAttribute(SESSION_STATE);
         // --
@@ -162,7 +161,7 @@ public class CallbackController extends BaseController {
         try {
             openOauthBean = OauthQQ.me().getUserBeanByCode(code);
         } catch (Exception e) {
-            throw new MtonsException("解析信息时发生错误");
+            throw new ArmorException("解析信息时发生错误");
         }
 
         OpenOauthVO openOauth = new OpenOauthVO();
@@ -226,7 +225,7 @@ public class CallbackController extends BaseController {
         String session_state = (String) request.getSession().getAttribute(SESSION_STATE);
         // 取消了授权
         if (StringUtils.isBlank(state) || StringUtils.isBlank(session_state) || !state.equals(session_state) || StringUtils.isBlank(code)) {
-            throw new MtonsException("缺少必要的参数");
+            throw new ArmorException("缺少必要的参数");
         }
         request.getSession().removeAttribute(SESSION_STATE);
 
@@ -235,7 +234,7 @@ public class CallbackController extends BaseController {
             //通过code获取openid和用户信息
             openOauthBean = OauthGithub.me().getUserBeanByCode(code);
         } catch (Exception e) {
-            throw new MtonsException("解析信息时发生错误");
+            throw new ArmorException("解析信息时发生错误");
         }
 
         OpenOauthVO openOauth = new OpenOauthVO();
@@ -281,7 +280,7 @@ public class CallbackController extends BaseController {
             request.getSession().setAttribute(SESSION_STATE, state);
             response.sendRedirect(OauthDouban.me().getAuthorizeUrl(state));
         } catch (Exception e) {
-            throw new MtonsException("跳转到豆瓣授权接口时发生异常");
+            throw new ArmorException("跳转到豆瓣授权接口时发生异常");
         }
     }
 
@@ -300,7 +299,7 @@ public class CallbackController extends BaseController {
         String session_state = (String) request.getSession().getAttribute(SESSION_STATE);
         // 取消了授权
         if (StringUtils.isBlank(state) || StringUtils.isBlank(session_state) || !state.equals(session_state) || StringUtils.isBlank(code)) {
-            throw new MtonsException("缺少必要的参数");
+            throw new ArmorException("缺少必要的参数");
         }
         request.getSession().removeAttribute(SESSION_STATE);
         // --
@@ -309,7 +308,7 @@ public class CallbackController extends BaseController {
         try {
             openOauthBean = OauthDouban.me().getUserBeanByCode(code);
         } catch (Exception e) {
-            throw new MtonsException("解析信息时发生错误");
+            throw new ArmorException("解析信息时发生错误");
         }
 
         OpenOauthVO openOauth = new OpenOauthVO();
@@ -357,8 +356,8 @@ public class CallbackController extends BaseController {
                 // 将远程图片下载到本地
                 String ava100 = Consts.avatarPath + getAvaPath(u.getId(), 100);
                 byte[] bytes = ImageUtils.download(openOauth.getAvatar());
-                storageFactory.get().writeToStore(bytes, ava100);
-                userService.updateAvatar(u.getId(), ava100);
+                String imagePath = storageFactory.get().writeToStore(bytes, ava100);
+                userService.updateAvatar(u.getId(), imagePath);
 
                 thirdToken = new OpenOauthVO();
                 BeanUtils.copyProperties(openOauth, thirdToken);
@@ -388,7 +387,7 @@ public class CallbackController extends BaseController {
             }
             return view;
         }
-        throw new MtonsException("登录失败");
+        throw new ArmorException("登录失败");
     }
 
     private UserVO wrapUser(OpenOauthVO openOauth) {

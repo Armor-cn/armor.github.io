@@ -36,7 +36,7 @@
             </div>
             <div class="panel-footer">
                 <div class="hidden-xs">
-                    <div class="social-share" data-sites="qq, weibo, wechat, qzone, facebook, twitter, google"></div>
+                    <div class="social-share" data-sites="qq, weibo, wechat, qzone"></div>
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -61,9 +61,8 @@
                     </div>
                     <div class="cbox-ats clearfix">
                         <div class="ats-func">
-                            <div class="OwO" id="face-btn"></div>
+                            <div class="OwO" id="face-btn">☺</div>
                         </div>
-                        <div class="ats-issue">
                             <button id="btn-chat" class="btn btn-success btn-sm bt">发送</button>
                         </div>
                     </div>
