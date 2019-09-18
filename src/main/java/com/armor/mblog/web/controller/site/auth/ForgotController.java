@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 /**
- * @author langhsu on 2015/8/14.
+ * @author
  */
 @Controller
 public class ForgotController extends BaseController {
